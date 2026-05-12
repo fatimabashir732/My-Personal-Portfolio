@@ -3,11 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatima's Portfolio</title>
+    <title>Fatima Bashir's Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <h1>Welcome to Fatima's Portfolio</h1>
-    <p>This is a placeholder for Fatima's portfolio content.</p>
+    <header>
+        <nav class="navbar">
+            <div class="logo__container">
+                <a href="http://www.paper-airplanes.org/">
+                    <img src="assets/images/paper-airplanes-logo.png" alt="Paper Airplanes Logo" class="logo__image">
+                </a>
+                <h1 class="logo__text">Fatima <span style="color: #469f5a;">Muhammad Bashir.</span></h1>
+            </div>
+            <ul class="nav__links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="button__cv"><i class="fas fa-download"></i>Download CV</button>
+        </nav>
+    </header>
+<main>
+        <!-- Hero Section -->
+    <section id="home">
+            <div class="hero__container">
+                <div class="hero__text">
+                    <h4>Hi, I'm</h4>
+                    <h1>Fatima Muhammad Bashir.</h1>
+                <h3><i class="fas fa-user-md"></i> Physiotherapist | <span style="color: #469f5a;"><i class="fas fa-laptop-code"></i> Aspiring Full-Stack Developer</span></h3>
+           <p>I combine my healthcare background with a passion
+                for technology to create innovative solutions
+                that make a real impact in people's lives.
+            </p>
+
+            <div class="hero__buttons">
+                <a href="#projects"><button class="button__view__projects"><i class="fas fa-eye"></i> View Projects →</button></a>
+                <a href="#contact"><button class="button__contact"><i class="fas fa-envelope"></i> Contact Me</button></a>
+            </div>
+            </div>
+            <div class="hero__image">
+                <div class="image__placeholder">
+                <img src="assets/images/female1.png" alt="Hero Image" width="300" height="300">
+                </div>
+            </div>
+        </div>
+     </section>
+<!-- About Section -->
+    <section id="about">
+        <div class="about__container">
+
+            <div class="about__image">
+                <div class="image__placeholder">
+                    <img src="assets/images/female2.png" alt="Profile Picture" width="300" height="300">
+                </div>
+            </div>
+            <div class="about__text">
+                <h2 class="about__me">About Me</h2>
+                <p>I am a licensed physiotherapist with a strong interest in digital innovation and healthcare technology. My goal is to create solutions that improves patient/client experiences and make healthcare more accessible through technology.</p>
+                <p>I am currently learning full-stack development and building projects that solves real-world problems.</p>
+            <button class="learn__more"><i class="fas fa-info-circle"></i> Learn More About Me</button>
+            </div>
+                <div class="interests__card">
+                <ul class="interests__list">
+                    <li><i class="fas fa-user-md"></i> Healthcare Professional</li><hr>
+                    <li><i class="fas fa-brain"></i> Problem Solver</li><hr>
+                    <li><i class="fas fa-laptop"></i> Tech Enthusiast</li><hr>
+                    <li><i class="fas fa-graduation-cap"></i> Lifelong Learner</li>
+                </ul>
+                </div>
+        </div>
+    </section>
+<!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills__container">
+
+                <div class="skills__card">
+                    <h3>Frontend Development</h3>
+                    <div class="card__tech">
+                    <span><i class="fab fa-html5"></i> HTML</span>
+                    <span><i class="fab fa-css3-alt"></i> CSS</span>
+                    <span><i class="fab fa-js"></i> JavaScript</span>
+                    </div>
+                </div>
     
+                <div class="skills__card">
+                    <h3>Backend Development</h3>
+                    <div class="card__tech"> 
+                    <span><i class="fab fa-php"></i> PHP</span>
+                    <span><i class="fas fa-database"></i> MySQL</span>
+                    </div>
+                </div>
+    
+                <div class="skills__card">
+                    <h3>Tools</h3>
+                    <div class="card__tech">
+                    <span><i class="fab fa-git"></i> Git</span>
+                    <span><i class="fas fa-code"></i> VS Code</span>
+                    <span><i class="fas fa-pencil-alt"></i> Figma</span>
+                    </div>
+                </div>
+            </div>
+</section>
+<!-- Projects Section -->
+<section id="projects">
+  <h2>My Projects</h2>
+
+  <div class="projects__container">
+    <div class="project__card">
+      <img src="assets/images/project1.jpeg" alt="project">
+      <h3>Profile Page</h3>
+      <p>A responsive profile page showcasing my skills and experience.</p>
+      <!--<div class="tech">
+        <span><i class="fab fa-php"></i> PHP</span>
+        <span><i class="fas fa-database"></i> MySQL</span>
+        <span><i class="fab fa-js"></i> JavaScript</span>
+      </div>-->
+      <a href="https://fmb.infinityfreeapp.com/" class="btn">Live Demo →</a>
+    </div>
+
+    <div class="project__card">
+      <img src="assets/images/project2.jpeg" alt="project">
+      <h3>Task Management Dashboard</h3>
+      <p>Organize tasks and track progress efficiently.</p>
+      <!--<div class="tech">
+        <span><i class="fab fa-html5"></i> HTML</span>
+        <span><i class="fab fa-css3-alt"></i> CSS</span>
+        <span><i class="fab fa-js"></i> JavaScript</span>
+      </div>-->
+      <a href="https://fmb.infinityfreeapp.com/" class="btn">Live Demo →</a>
+    </div>
+
+    <div class="project__card">
+      <img src="assets/images/project3.jpeg" alt="project" >
+      <h3>Personal Portfolio Website</h3>
+      <p>A responsive portfolio website to showcase my skills and projects.</p>
+     <!-- <div class="tech">
+        <span><i class="fab fa-html5"></i> HTML</span>
+        <span><i class="fab fa-css3-alt"></i> CSS</span>
+        <span><i class="fab fa-js"></i> JavaScript</span>
+      </div> -->
+      <a href="https://fmb.infinityfreeapp.com/" class="btn">Live Demo →</a>
+    </div>
+    </form>
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Get In Touch</h2>
+
+  <div class="contact__container">
+
+    <!-- Contact Info -->
+    <div class="contact__info">
+      <p>Do you have a project in mind or you just want to say hello?</p>
+      <p>Email: fatimabashir732@gmail.com</p>
+      <p>Phone: +234 7063988877</p>
+      <p>Location: Nigeria</p>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="backend/contact.php" method="POST" class="contact__form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+</main>
+<footer>
+    <p>&copy; 2026 Fatima Muhammad Bashir. All rights reserved.</p>
+
+</footer>
 </body>
+<script src="scripts/script.js"></script>
 </html>

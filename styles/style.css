@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #09437d;
+    color: #333;
+    max-width: 1400px;
+    margin: auto;
+}
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 15px 50px;
+}
+
+.logo__container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo__image {
+    width: 100px;
+    height: 40px;
+}
+.logo__text {
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav__links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav__links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.button__cv {
+    background-color: #0d355f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.button__cv i {
+  color: #fff;
+}
+.button__cv:hover {
+    background-color: #0056b3;
+}
+/* HERO SECTION */
+#home {
+    padding: 20px 60px;
+    background-color: #8cc4ff;
+}
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px; 
+}
+.hero__text {
+    max-width: 50%;
+}
+.hero__text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.hero__text h3 {
+    margin-bottom: 15px;
+    color: #555;
+}
+.hero__text p {
+    margin-bottom: 20px;
+}   
+.hero__buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.button__view__projects {
+    background: transparent;
+    color: #28a745;
+    border: 2px solid #28a745;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.button__view__projects i {
+  color: #28a745;
+}
+.button__view__projects:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+.button__contact {
+    background: transparent;
+    color: #1E3A8A;
+    border: 2px solid #1E3A8A;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.button__contact:hover {
+    background-color: #1E3A8A;
+    color: #fff;
+}
+.hero__image .image__placeholder {
+    width: 100%;
+    height: auto;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+/* ABOUT SECTION */
+#about {
+    padding: 20px 60px;
+    background-color: #f9f9f9;
+}
+.about__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.about__image .image__placeholder {
+    width: 100%;
+    height: auto;
+    background-color: #ddd;
+    border-radius: 20px;
+}
+.about__text {
+    max-width: 500px;
+}
+.about__text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.about__text p {
+    margin-bottom: 15px;
+    color: #555;
+}
+.learn__more {
+    background-color: transparent;
+    color: #28a745;
+    border: 2px solid #28a745;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.learn__more i {
+  color: #28a745;
+}
+.learn__more:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+.interest__card {
+    margin-top: 30px;
+    padding: 20px;
+     width: 100%;
+     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+     transition: all 0.3s ease;
+}
+.interests__list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  list-style: none;
+  gap: 15px;
+  background-color: #dfeafc;
+  border-radius: 8px;
+}
+i {
+    color: #0d355f;
+    margin-right: 10px;
+}
+.interests__list:hover {
+    transform: translateX(-5px);
+}
+#skills {
+  background-color:  #8cc4ff;;
+    text-align: center;
+    padding: 40px 20px;
+    
+}
+#skills h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.skills__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+.skills__card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 250px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}   
+.skills__card:hover {
+    transform: translateY(-5px);
+}
+.skills__card h3 {
+    margin-bottom: 10px;
+}
+.card__tech span {
+  background: #eee;
+  padding: 5px 10px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 12px;
+}
+/* PROJECTS SECTION */
+#projects {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project__card {
+  background:#dfeafc;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.project__card:hover {
+  transform: translateY(-10px);
+}
+
+.project__card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/*.tech {
+  margin: 10px 0;
+}
+
+.tech span {
+  background: #eee;
+  padding: 5px 10px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 12px;
+}*/
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #0d355f;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+/* CONTACT SECTION*/
+#contact {
+  background-color:  #8cc4ff;;
+  padding: 40px 20px;
+}
+.contact__info {
+  flex: 1;
+  min-width: 250px;
+}
+.contact__info p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  min-width: auto;
+}
+.contact__form input,
+.contact__form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.contact__form textarea {
+  height: 80px;
+}
+.contact__form button {
+  padding: 12px;
+  border: none;
+  background: #0a66c2;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+}
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #0a66c2;
+}
+.error-message {
+    font-weight: 500;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0d355f;
+  color: white;
+  margin-top: 40px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .hero__container,
+  .about__container,
+  .contact__container {
+    gap: 30px;
+  }
+
+  .hero__text {
+    max-width: 100%;
+  }
+
+  .hero__image .image__placeholder,
+  .about__image .image__placeholder {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px 20px;
+  }
+
+  .logo__container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .button__cv {
+    width: 100%;
+    max-width: 260px;
+    align-self: center;
+  }
+
+  .hero__container,
+  .about__container,
+  .contact__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__text,
+  .about__text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero__text h1 {
+    font-size: 36px;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero__image .image__placeholder,
+  .about__image .image__placeholder {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .projects__container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects__container,
+  .contact__form,
+  .skills__card,
+  .project__card,
+  .contact__info,
+  .interests__card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0 10px;
+  }
+
+  .navbar {
+    gap: 12px;
+  }
+
+  .logo__image {
+    width: 80px;
+    height: auto;
+  }
+
+  .logo__text {
+    font-size: 20px;
+  }
+
+  #home,
+  #about,
+  #projects,
+  #contact {
+    padding: 20px 10px;
+  }
+
+  .hero__text h1 {
+    font-size: 30px;
+  }
+
+  .button__view__projects,
+  .button__contact,
+  .contact__form button {
+    width: 100%;
+  }
+
+  .contact__form textarea {
+    min-height: 140px;
+  }
+}

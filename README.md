@@ -6,7 +6,7 @@ This project is a full-stack personal portfolio website developed to showcase my
 
 1. Responsive design (mobile-friendly)
 2. Project showcase section
-3. About, Accomplishments and skills section
+3. About and skills section
 4. Functional contact form (connected to backend)
 5. Clean and user-friendly interface
 
@@ -16,20 +16,19 @@ This project is a full-stack personal portfolio website developed to showcase my
 2. CSS
 3. JavaScript
 4. PHP
-5. MySQL
 
-## Project Sturcture
-
-```text
-project-folder/
-├── index.html
-├── style.css
-├── script.js
-├── connect.php
-├── contact.php
-├── admin.php 
-└── database.sql
-```
+## Project Structure
+Fatima-Portfolio/
+├── 📄 index.html
+├── 📝 README.md
+├── assets/
+│   └── images/
+├── backend/
+│   └── contact.php
+├── scripts/
+│   └── script.js
+└── 🎨 styles/
+    └── style.css
 
 ## Installation Instructions
 
@@ -64,9 +63,10 @@ localhost/Fatima-Portfolio
 
 1. Add authentication system (login/signup)
 2. Improve UI with animations
-3. Integrate real-time messaging or email notifications
-4. Add more projects, accomplishments and case studies
-5. Add an AI Agent and FAQs
+3. Improve backend integration
+4. Integrate real-time messaging or email notifications
+5. Add more projects, accomplishments and case studies
+6. Add an AI Agent and FAQs
 
 ## Acknowledgements
 
